@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ListaInfoVentas[
+        <!ELEMENT ListaInfoVentas (Ventas+)>
+        <!ELEMENT Ventas (Importe, Comprador,Vendedor,Fecha?,CodigoDeFactura)>
+        <!ELEMENT Importe (#PCDATA)>
+        <!ELEMENT Comprador (#PCDATA)>
+        <!ELEMENT Vendedor (#PCDATA)>
+        <!ELEMENT Fecha (#PCDATA)>
+        <!ELEMENT CodigoDeFactura (#PCDATA)>
+        ]>
+
+<ListaInfoVentas>
+    <Ventas>
+        <Importe>12000</Importe>
+        <Comprador>Gloria Arboleda Muñoz</Comprador>
+        <Vendedor>Cristina Castro Rios</Vendedor>
+        <Fecha>02-06-2022</Fecha>
+        <CodigoDeFactura>CodeF01</CodigoDeFactura>
+    </Ventas>
+    <Ventas>
+        <Importe>34000</Importe>
+        <Comprador>Fernando Restrepo Agudelo</Comprador>
+        <Vendedor>Cristina Castro Rios</Vendedor>
+        <Fecha>25-05-2022</Fecha>
+        <CodigoDeFactura>CodeF02</CodigoDeFactura>
+    </Ventas>
+    <Ventas>
+        <Importe>26000</Importe>
+        <Comprador>David Ospina Montoya</Comprador>
+        <Vendedor>Cristina Castro Rios</Vendedor>
+        <CodigoDeFactura>CodeF03</CodigoDeFactura>
+    </Ventas>
+
+</ListaInfoVentas>
