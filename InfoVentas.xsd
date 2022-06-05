@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ListaVentas"/>
+  <xs:complexType name="Ventas">
+    <xs:sequence>
+      <xs:element name="Importe">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="12000"/>
+            <xs:enumeration value="34000"/>
+            <xs:enumeration value="26000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Comprador">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Gloria Arboleda Muñoz"/>
+            <xs:enumeration value="Fernando Restrepo Agudelo"/>
+            <xs:enumeration value="David Ospina Montoya"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Vendedor" type="xs:string" />
+      <xs:element name="Fecha" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+            <xs:enumeration value="02-06-2022"/>
+            <xs:enumeration value="25-05-2022"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="CodigoDeFactura">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="CodeF01"/>
+            <xs:enumeration value="CodeF02"/>
+            <xs:enumeration value="CodeF03"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ListaVentas">
+    <xs:sequence>
+      <xs:element type="Ventas" name="Ventas" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
