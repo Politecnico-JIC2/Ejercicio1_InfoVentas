@@ -1,0 +1,13 @@
+body{
+    background-color: #e4e2e2;
+}
+
+table thead tr th, table tbody tr td{
+    border: 1px solid;
+}
+
+table{
+    border: 1px solid;
+    text-align: center;
+    background-color:#D7BCF3;
+}

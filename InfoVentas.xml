@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="InfoVentas.xsl" ?>
 <!DOCTYPE ListaVentas SYSTEM "InfoVentas.dtd">
-<ListaVentas>
+<ListaVentas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="InfoVentas.xsd">
     <Ventas>
         <Importe>12000</Importe>
         <Comprador>Gloria Arboleda Muñoz</Comprador>
         <Vendedor>Cristina Castro Rios</Vendedor>
-        <Fecha>02-06-2022</Fecha>
+        <Fecha>2020-06-20</Fecha>
         <CodigoDeFactura>CodeF01</CodigoDeFactura>
     </Ventas>
     <Ventas>
         <Importe>34000</Importe>
         <Comprador>Fernando Restrepo Agudelo</Comprador>
-        <Vendedor>Cristina Castro Rios</Vendedor>
-        <Fecha>25-05-2022</Fecha>
+        <Vendedor>Antonio Galvis Vanegas</Vendedor>
+        <Fecha>2008-02-12</Fecha>
         <CodigoDeFactura>CodeF02</CodigoDeFactura>
     </Ventas>
     <Ventas>
         <Importe>26000</Importe>
         <Comprador>David Ospina Montoya</Comprador>
-        <Vendedor>Cristina Castro Rios</Vendedor>
+        <Vendedor>Yeny Hincapie Cardona</Vendedor>
         <CodigoDeFactura>CodeF03</CodigoDeFactura>
     </Ventas>
 
