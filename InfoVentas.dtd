@@ -1,0 +1,7 @@
+<!ELEMENT ListaVentas (Ventas+)>
+        <!ELEMENT Ventas (Importe, Comprador,Vendedor,Fecha?,CodigoDeFactura)>
+        <!ELEMENT Importe (#PCDATA)>
+        <!ELEMENT Comprador (#PCDATA)>
+        <!ELEMENT Vendedor (#PCDATA)>
+        <!ELEMENT Fecha (#PCDATA)>
+        <!ELEMENT CodigoDeFactura (#PCDATA)>

@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE ListaInfoVentas[
-        <!ELEMENT ListaInfoVentas (Ventas+)>
-        <!ELEMENT Ventas (Importe, Comprador,Vendedor,Fecha?,CodigoDeFactura)>
-        <!ELEMENT Importe (#PCDATA)>
-        <!ELEMENT Comprador (#PCDATA)>
-        <!ELEMENT Vendedor (#PCDATA)>
-        <!ELEMENT Fecha (#PCDATA)>
-        <!ELEMENT CodigoDeFactura (#PCDATA)>
-        ]>
-
-<ListaInfoVentas>
+<!DOCTYPE ListaVentas SYSTEM "InfoVentas.dtd">
+<ListaVentas>
     <Ventas>
         <Importe>12000</Importe>
         <Comprador>Gloria Arboleda Muñoz</Comprador>
@@ -31,4 +22,4 @@
         <CodigoDeFactura>CodeF03</CodigoDeFactura>
     </Ventas>
 
-</ListaInfoVentas>
+</ListaVentas>
